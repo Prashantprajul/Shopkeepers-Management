@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MART WEB</title>
+    <link rel="stylesheet" href="Shopkeeper.css">
+</head>
+<body>
+    <div id="div1">
+    <form id="form">
+        <label for="item">Item Name:
+            <input type="text" id="item">
+        </label>
+        <label for="desc">Description:
+            <input type="text" id="desc">
+        </label>
+        <label for="price">Price:
+            <input type="text" id="price">
+        </label>
+        <label for="quant">Quantity:
+            <input type="text" id="quant">
+        </label>
+    <button type="submit" id="sub" class="btn">ADD ITEM</button>
+        </form>
+    </div>
+<!--SEARCH ICON
+    <div id="div2">
+        <label for="srh">Search:
+            <input type="text" id="srh" placeholder="Search items availability">
+        </label>
+    </div>
+-->
+    <!--DISPLAYING DATA-->
+    <table id="table">
+        <caption id="caption">Availability</caption>
+        <thead>
+            <tr>
+                <!--<td>Sl.no.</td>-->
+                <td>Item Name</td>
+                <td>Description</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Items to buy</td>
+            </tr>
+        </thead>
+        <tbody id="display">
+
+        </tbody>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
+    <script src="shopdemo.js"></script>
+</body>
+</html>
